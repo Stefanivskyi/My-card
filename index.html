@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>My task</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/myless.css">
+    </head>
+<body>
+	<div class="card" id="side-main">
+   		<div class="chip"><div class="chip-in-chip"></div></div>
+   		<div class="logo"></div>
+   		<div id="card-number" contenteditable="faulse" data-placeholder="**** **** **** ****"></div>
+    	<div id="name" class="testss" contenteditable="faulse" data-placeholder="FULL NAME"></div>
+   		<div class="year">
+        	<div class="month-year">MONTH/YEAR</div>
+        	<div class="valid-thru">Valid<br>Thru</div>
+        	<div id="entered-values" contenteditable="faulse" data-placeholder="**/**"></div>
+    	</div>
+	</div>
+	<div id="side-back" class="card">
+   		<div class="scanning-strip"></div>
+   		<div class="white-strip"></div>
+   		<div id="cvc-result" contenteditable="faulse" data-placeholder="***"></div>
+   		<div class="back-chip">
+       		<div class="back-chip-in-chip"></div>
+   		</div>
+   		<div class="back-div">The card has been issued by developer  for anyone to use anywhere for free. For support issues, please visit: github.com</div>
+	</div>
+
+	<form name="firstform" class="fir">
+    	<p class="first-input-p">Card Number</p>
+    	<input type="text" name="cardnumber" pattern="s[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="**** **** **** ****" id="card-number-input">
+	</form>
+	<form name="secondform">
+		<p class="second-input-p">Full Name</p>
+		<input type="text" placeholder="Full name" id="name-input">
+	</form>
+	<form name="thirdform">
+		<p class="third-input-p">Expiry</p>
+    	<input type="text" name="cardyear" pattern="s[0-9]{4}\s[0-9]{4}\s[0-9]{4}\s[0-9]{4}" placeholder="**/**" id="month-year-input">
+	</form>
+	<form name="fourthform">
+		<p class="fourth-input-p">CVC</p>
+		<input type="number" placeholder="cvm" id="cvc-input">
+	</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

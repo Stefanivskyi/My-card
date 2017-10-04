@@ -1,0 +1,228 @@
+
+/*styles for my card and animation styles for change sides*/
+.card{
+	position: absolute;
+	width: 380px;
+	height: 200px;
+	background-color: #ebebe0;
+	margin: 50px;
+	border-radius: 12px;
+	backface-visibility:             hidden;
+        -moz-backface-visibility:    hidden;
+        -ms-backface-visibility:     hidden;
+        -o-backface-visibility:      hidden;
+        -webkit-backface-visibility: hidden;
+    transform-origin:             15% 50% 0px;
+        -moz-transform-origin:    50% 50% 0px;
+        -ms-transform-origin:     50% 50% 0px;
+        -o-transform-origin:      50% 50% 0px;
+        -webkit-transform-origin: 50% 50% 0px;
+    transition: all 1s;
+        -moz-transition:    all 1s;
+        -ms-transition:     all 1s;
+        -o-transition:      all 1s;
+        -webkit-transition: all 1s;
+}
+#side-main {
+    transform:             rotateY( 0deg );
+        -moz-transform:    rotateY( 0deg );
+        -ms-transform:     rotateY( 0deg );
+        -o-transform:      rotateY( 0deg );
+        -webkit-transform: rotateY( 0deg );
+}
+#side-back {
+    transform:             rotateY( 180deg );
+        -moz-transform:    rotateY( 180deg );
+        -ms-transform:     rotateY( 180deg );
+        -o-transform:      rotateY( 180deg );
+        -webkit-transform: rotateY( 180deg );
+}
+.change-side-1 {    
+    transform:             rotateY( 0deg ) !important;
+        -moz-transform:    rotateY( 0deg ) !important;
+        -ms-transform:     rotateY( 0deg ) !important;
+        -o-transform:      rotateY( 0deg ) !important;
+        -webkit-transform: rotateY( 0deg ) !important;
+}
+
+.change-side-2 {
+	transform:             rotateY( 180deg ) !important;
+        -moz-transform:    rotateY( 180deg ) !important;
+        -ms-transform:     rotateY( 180deg ) !important;
+        -o-transform:      rotateY( 180deg ) !important;
+        -webkit-transform: rotateY( 180deg ) !important;
+}
+/*This is styles for main-side of my card*/
+.chip{
+	position: absolute;
+	width: 46px;
+	height: 32px;
+	background-color: #d7d7c1;
+	margin-top: 44px;
+	margin-left: 48px;
+	border-radius: 5px;
+}
+.chip-in-chip{
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	background-color: #e1e1d0;
+	margin-top: 6px;
+	border-radius: 5px;
+}
+.logo{
+	position: absolute;
+	width: 68px;
+	height: 42px;
+	background: url("../img/matercard.png") 100% 100% no-repeat;
+	background-size: cover;
+	margin-top: 20px;
+	margin-left: 280px;
+	border-radius: 5px;
+}
+.year{
+	position: absolute;
+	width: 58px;
+	height: 32px;
+	margin-top: 140px;
+	margin-left: 266px;
+	color: #ffffff;
+}
+.month-year{
+	position: absolute;
+	margin-top: 0;
+	font-size: 8px;
+	color: #ffffff;
+}
+.valid-thru{
+	position: absolute;
+	font-size: 10px;
+	margin-left: -22px;
+	margin-top: 12px;
+}
+/*styles for div where information will output*/
+#card-number{
+	position: absolute;
+	width: 304px;
+	height: 30px;
+	margin-top: 96px;
+	margin-left: 38px;
+	font-size: 28px;
+	letter-spacing: 2px;
+	font-weight: 300;
+	color: #ffffff;
+}
+#name{
+	position: absolute;
+	width: 186px;
+	height: 30px;
+	margin-top: 142px;
+	margin-left: 38px;
+	color:#ffffff;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+#entered-values{
+	position: absolute;
+	margin-left: 5px;
+	margin-top: 14px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-size: 18px;
+	font-weight: 300;
+}
+/*delete spin-button from input*/
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/*placeholder for div*/
+#name:empty:not(:focus):before {
+	content: attr(data-placeholder)
+}
+#entered-values:empty:not(:focus):before {
+	content: attr(data-placeholder)
+}
+#card-number:empty:not(:focus):before {
+	content: attr(data-placeholder)
+}
+#cvc-result:empty:not(:focus):before {
+	content: attr(data-placeholder)
+}
+#card-number-input{
+	position: relative;
+	margin-top: 300px;
+}
+/*styles for input*/
+#card-number-input, #name-input, #month-year-input, #cvc-input{
+	margin-left: 50px;
+	position: relative;
+	width: 500px;
+	height: 40px;
+	font-size: 18px;
+	color: #6d6c65;
+	padding: 2px;
+}
+/*styles for input's p*/
+.first-input-p{
+	position: relative;
+	float: top;
+	top: 300px;
+	margin-left: 50px;
+}
+.second-input-p, .third-input-p, .fourth-input-p{
+	position: relative;
+	margin-left: 50px;
+}
+/*This is styles for back-side of my card*/
+.scanning-strip{
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	margin-top: 26px;
+	background-color: #000000;
+}
+.white-strip{
+	position: absolute;
+	width: 290px;
+	height: 32px;
+	margin-top: 86px;
+	margin-left: 8px;
+	background-color: #ffffff;
+}
+#cvc-result{
+	position: absolute;
+	margin-left: 310px;
+	margin-top: 86px;
+	color: #ffffff;
+	letter-spacing: 1px;
+	font-size: 18px;
+}
+.back-chip{
+	position: absolute;
+	width: 46px;
+	height: 32px;
+	background-color: #d7d7c1;
+	margin-top: 138px;
+	margin-left: 8px;
+	border-radius: 5px;
+}
+.back-chip-in-chip{
+	position: absolute;
+	width: 28px;
+	height: 20px;
+	background-color: #e1e1d0;
+	margin-top: 6px;
+	border-radius: 5px;
+}
+.back-div{
+	position: absolute;
+	width: 242px;
+	height: 32px;
+	margin-top: 138px;
+	margin-left: 68px;
+	font-size: 10px;
+	color: #ffffff;
+}
